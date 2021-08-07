@@ -58,22 +58,26 @@ LEXICON TLSuff
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>tl    # ;
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@               # ;
 %<n%>:                                             Plural ;
+%<n%>:                                             TsinSuff ;
 
 LEXICON TLISuff
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>tli   # ;
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@               # ;
 %<n%>:                                             Plural ;
+%<n%>:                                             TsinSuff ;
 
 
 LEXICON LISuff
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>li    # ;
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@               # ;
 %<n%>:                                             Plural ;
+%<n%>:                                             TsinSuff ;
 
 LEXICON NullSuff
 @D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@        # ;
 @D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@               # ;
 %<n%>:                                             Plural ;
+%<n%>:                                             TsinSuff ;
 
 
 LEXICON Plural
@@ -83,7 +87,7 @@ LEXICON Plural
 
 LEXICON TsinSuff
 @D.Sa.Pl@%<dim%>:@D.Sa.Pl@%>tsin                # ;
-@R.Sa.Pl@%<dim%>:@R.Sa.Pl@%>tsitsintin          # ;
+@R.Sa.Pl@@D.Px@%<dim%>:@R.Sa.Pl@@D.Px@%>tsitsintin          # ;
 @R.Px@@R.Sa.Pl@%<dim%>:@R.Px@@R.Sa.Pl@%>tsitsin # ;
 
 
