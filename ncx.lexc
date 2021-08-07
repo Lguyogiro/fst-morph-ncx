@@ -1,0 +1,109 @@
+Multichar_Symbols
+%>
+%<n%>
+%<abs%>
+%<pl%>
+%<dim%>
+%<px1sg%>
+%<px2sg%>
+%<px3sg%>
+%<px1pl%>
+%<px2pl%>
+%<px3pl%>
+
+%{m%} 
+%{i%}
+
+
+@P.Px.Sg@                                ! Posesivo singular
+@R.Px.Sg@
+@P.Px.Pl@                                ! Posesivo plural
+@R.Px.Pl@
+@D.Px@                                   ! Ninguna posesión
+@R.Px@
+@P.Sa.Sg@                                ! Sujeto singular
+@R.Sa.Sg@
+@P.Sa.Pl@                                ! Sujeto plural
+@R.Sa.Pl@
+@P.Sa.2@                                 ! Sujeto es 2da persona (necesario para el honorífico)
+@R.Sa.2@
+@P.Sa.3@
+@D.Sa.3@
+@D.Sa@                                   ! Ningún sujeto
+@D.Sa.Pl@ 
+@D.Sa.Sg@
+
+
+LEXICON Root
+Nominal ;
+@P.Sa.Pl@:@P.Sa.Pl@ Nominal ;
+
+
+LEXICON Nominal
+Possession ;
+Nouns ;
+
+
+LEXICON Possession
+
+@P.Px.Sg@%<px1sg%>:@P.Px.Sg@no%>               Nouns ;
+@P.Px.Sg@%<px2sg%>:@P.Px.Sg@mo%>               Nouns ;
+@P.Px.Sg@%<px3sg%>:@P.Px.Sg@i%>                Nouns ;
+@P.Px.Pl@%<px1pl%>:@P.Px.Pl@to%>               Nouns ;
+@P.Px.Pl@%<px2pl%>:@P.Px.Pl@namo%>             Nouns ;
+@P.Px.Pl@%<px3pl%>:@P.Px.Pl@in%{m%}%{i%}%>     Nouns ;
+
+
+LEXICON TLSuff
+@D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>tl    # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@               # ;
+%<n%>:                                             Plural ;
+
+LEXICON TLISuff
+@D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>tli   # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@               # ;
+%<n%>:                                             Plural ;
+
+
+LEXICON LISuff
+@D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@%>li    # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@               # ;
+%<n%>:                                             Plural ;
+
+LEXICON NullSuff
+@D.Px@@D.Sa.Pl@%<n%>%<abs%>:@D.Px@@D.Sa.Pl@        # ;
+@D.Sa.Pl@@R.Px@%<n%>:@D.Sa.Pl@@R.Px@               # ;
+%<n%>:                                             Plural ;
+
+
+LEXICON Plural
+@R.Sa.Pl@@D.Px@%<pl%>:@R.Sa.Pl@@D.Px@%>mej          # ;
+@R.Sa.Pl@@R.Px@%<pl%>:@R.Sa.Pl@@R.Px@%>uan          # ;
+
+
+LEXICON TsinSuff
+@D.Sa.Pl@%<dim%>:@D.Sa.Pl@%>tsin                # ;
+@R.Sa.Pl@%<dim%>:@R.Sa.Pl@%>tsitsintin          # ;
+@R.Px@@R.Sa.Pl@%<dim%>:@R.Px@@R.Sa.Pl@%>tsitsin # ;
+
+
+LEXICON Nouns
+siuatl:siua                       TLSuff ;
+maitl:mai                         TLSuff ;
+tlaltikpaktlakatl:tlaltikpaktlaka TLSuff ;
+xochitl:xochi                     TLSuff ;
+takotl:tako                       TLSuff ;
+neluayotl:neluayo                 TLSuff ;
+
+itskuintli:itskuin                TLISuff ;
+amochtli:amoch                    TLISuff ;
+tlapechtli:tlapech                TLISuff ;
+
+
+kali:kal                          LISuff ;
+tlakuikali:tlakuikal              LISuff ;
+tsotsoli:tsotsol                  LISuff ;
+
+mixton:mixton                     NullSuff ;
+tsonteko:tsonteko                 NullSuff ;
+yolikni:yolikni                   NullSuff ;

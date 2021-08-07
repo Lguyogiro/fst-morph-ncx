@@ -1,0 +1,29 @@
+
+Alphabet
+ 
+ A B C D E F G H I J K L M N Ñ O P Q R S T U W X Y Z
+ a b c d e f g h i j k l m n ñ o p q r s t u w x y z 
+;
+
+
+Sets
+
+Vow   = A E I O U a e i o u ;
+
+Cns   = b c d f g h j k l m n ñ p q r s t w x y z ;
+
+Rules
+"Remove morpheme boundary"
+%>:0 <=> _ ;
+
+"Posesivo vocal con vocal (m)"
+%{m%}:m <=> n _ %{i%}:i %>: Vow ;
+
+"Posesivo vocal con vocal (i)"
+%{i%}:i <=> n %{m%}:m _ %>: Vow ;
+
+"Posesivo cns con cns (m)"
+%{m%}:0 <=> n _ %{i%}:0 %>: Cns ;
+
+"Posesivo cns con cns (i)"
+%{i%}:0 <=> n %{m%}:0 _ %>: Cns ;
